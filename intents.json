@@ -1,0 +1,428 @@
+intents=[
+    {
+        "tag": "goodbye",
+        "patterns": ["bye", "goodbye", "see you", "take care", "later"],
+        "responses": ["Goodbye!", "See you later!", "Take care!", "Have a great day!", "Catch you later!"]
+    },
+    {
+        "tag": "thanks",
+        "patterns": ["thanks", "thank you", "thanks a lot", "thank you so much", "much appreciated"],
+        "responses": ["You're welcome!", "No problem!", "Anytime!", "Glad I could help!", "Happy to assist!"]
+    },
+    {
+        "tag": "hours",
+        "patterns": ["what are your hours?", "when are you open?", "hours of operation", "working hours", "open times"],
+        "responses": ["We're open from 9 AM to 5 PM.", "Our hours are 9 AM to 5 PM.", "We operate from 9 to 5.", "We're here 9-5 every day.", "We’re open 9 to 5."]
+    },
+    {
+        "tag": "location",
+        "patterns": ["where are you located?", "location", "address", "where can I find you?", "office location"],
+        "responses": ["We're located at 123 Main St.", "You can find us at 123 Main St.", "Our address is 123 Main St.", "We're on Main St.", "Come visit us at 123 Main St."]
+    },
+    {
+        "tag": "greeting_morning",
+        "patterns": ["good morning", "morning", "top of the morning"],
+        "responses": ["Good morning!", "Morning!", "Hope you have a great day!", "Top of the morning to you!", "Good day ahead!"]
+    },
+    {
+        "tag": "greeting_evening",
+        "patterns": ["good evening", "evening", "good night", "night"],
+        "responses": ["Good evening!", "Evening!", "Hope you had a great day!", "Good night!", "Sweet dreams!"]
+    },
+    {
+        "tag": "help",
+        "patterns": ["can you help me?", "I need help", "assist me", "help me out", "need assistance"],
+        "responses": ["Of course! What do you need help with?", "I'm here to help!", "How can I assist you?", "What can I do for you?", "Let me know how I can help."]
+    },
+    {
+        "tag": "joke",
+        "patterns": ["tell me a joke", "make me laugh", "joke", "funny", "give me a joke"],
+        "responses": ["Why don’t skeletons fight each other? They don’t have the guts.", "What do you call cheese that isn't yours? Nacho cheese.", "Why was the math book sad? It had too many problems.", "What do you call fake spaghetti? An impasta.", "Why don’t scientists trust atoms? Because they make up everything!"]
+    },
+    {
+        "tag": "weather",
+        "patterns": ["what's the weather?", "how's the weather?", "weather today", "today's weather", "weather update"],
+        "responses": ["It's sunny today!", "Looks like it might rain.", "It's cloudy outside.", "Expect some sunshine today!", "The weather's great today!"]
+    },
+    {
+        "tag": "food_recommendation",
+        "patterns": ["what should I eat?", "suggest a meal", "recommend food", "what's for lunch?", "food suggestion"],
+        "responses": ["How about a pizza?", "Try a salad!", "Maybe a burger?", "How about some sushi?", "Pasta sounds good!"]
+    },
+    {
+        "tag": "favorite_color",
+        "patterns": ["what's your favorite color?", "favorite color?", "do you have a favorite color?", "color preference?", "what color do you like?"],
+        "responses": ["I like blue.", "Green is nice.", "I’m a fan of red.", "Yellow is bright and cheerful!", "Purple is pretty cool!"]
+    },
+    {
+        "tag": "hobby",
+        "patterns": ["what's your hobby?", "what do you like to do?", "hobbies?", "how do you spend your time?", "do you have a hobby?"],
+        "responses": ["I love chatting with people!", "Learning new things is my hobby.", "Helping others is what I enjoy!", "I enjoy solving problems.", "Coding is fun for me!"]
+    },
+    {
+        "tag": "movie_recommendation",
+        "patterns": ["suggest a movie", "movie recommendation", "what movie should I watch?", "good movies?", "movie suggestion"],
+        "responses": ["How about watching 'Inception'?", "You might enjoy 'The Matrix'.", "Try watching 'The Shawshank Redemption'.", "Check out 'Interstellar'!", "'The Dark Knight' is a great choice!"]
+    },
+    {
+        "tag": "compliment",
+        "patterns": ["you are awesome", "you are great", "nice chatbot", "you're the best", "I like you"],
+        "responses": ["Thank you!", "You're awesome too!", "I appreciate it!", "Thanks for the compliment!", "You're amazing!"]
+    },
+    {
+        "tag": "motivation",
+        "patterns": ["give me motivation", "inspire me", "motivate me", "I need encouragement", "lift me up"],
+        "responses": ["You can do it!", "Believe in yourself!", "Keep pushing forward!", "Don’t give up!", "Stay positive and keep moving forward!"]
+    },
+    {
+        "tag": "favorite_animal",
+        "patterns": ["what's your favorite animal?", "favorite animal?", "do you have a favorite animal?", "animal you like?", "animal preference?"],
+        "responses": ["I like dogs!", "Cats are cool.", "Birds are fascinating.", "I think dolphins are amazing!", "Tigers are majestic!"]
+    },
+    {
+        "tag": "fun_fact",
+        "patterns": ["tell me a fun fact", "fun fact", "interesting fact", "did you know?", "give me a fact"],
+        "responses": ["Did you know that honey never spoils?", "A group of flamingos is called a 'flamboyance'.", "Bananas are berries, but strawberries aren’t.", "There are more stars in the universe than grains of sand on Earth.", "Octopuses have three hearts."]
+    },
+    {
+        "tag": "news",
+        "patterns": ["what's the news?", "any news?", "current events", "what's happening?", "latest news"],
+        "responses": ["You can check the latest news online!", "Stay updated with the latest headlines.", "News is constantly changing, stay informed!", "Check out the news for the latest updates.", "There’s always something happening!"]
+    },
+    {
+        "tag": "sports",
+        "patterns": ["what's the score?", "sports update", "any sports news?", "game update", "who's winning?"],
+        "responses": ["You can find the latest scores online.", "Check the sports channels for updates.", "It’s a great day for a game!", "Stay tuned for live sports updates.", "There’s a game happening somewhere!"]
+    },
+    {
+        "tag": "music_recommendation",
+        "patterns": ["suggest a song", "music recommendation", "what should I listen to?", "good songs?", "song suggestion"],
+        "responses": ["Try listening to 'Bohemian Rhapsody' by Queen.", "You might enjoy 'Shape of You' by Ed Sheeran.", "'Imagine' by John Lennon is a classic.", "How about 'Blinding Lights' by The Weeknd?", "'Rolling in the Deep' by Adele is great!"]
+    }
+
+
+    {
+        "tag": "greeting",
+        "patterns": ["hi", "hello", "hey", "how are you", "good day"],
+        "responses": ["Hi there!", "Hello!", "Hey!", "I'm doing well, thank you!", "Good day to you!"]
+    },
+    {
+        "tag": "goodbye",
+        "patterns": ["bye", "goodbye", "see you later", "take care", "catch you later"],
+        "responses": ["Goodbye!", "See you later!", "Take care!", "Catch you later!", "Farewell!"]
+    },
+    {
+        "tag": "thanks",
+        "patterns": ["thank you", "thanks", "I appreciate it", "much appreciated", "thank you so much"],
+        "responses": ["You're welcome!", "No problem!", "My pleasure!", "Glad to help!", "Anytime!"]
+    },
+    {
+        "tag": "greeting_morning",
+        "patterns": ["good morning", "morning", "top of the morning", "rise and shine"],
+        "responses": ["Good morning!", "Morning!", "Rise and shine!", "Have a great day!", "Good day!"]
+    },
+    {
+        "tag": "greeting_evening",
+        "patterns": ["good evening", "evening", "good night", "night"],
+        "responses": ["Good evening!", "Evening!", "Good night!", "Sleep well!", "Sweet dreams!"]
+    },
+    {
+        "tag": "help",
+        "patterns": ["can you help me?", "I need help", "assist me", "help me out"],
+        "responses": ["Of course! How can I assist?", "What do you need help with?", "I'm here to help!", "Let me know what you need."]
+    },
+    {
+        "tag": "weather",
+        "patterns": ["what's the weather?", "how's the weather?", "weather update", "is it sunny?"],
+        "responses": ["It's sunny today!", "Expect some rain later.", "It's cloudy right now.", "Looks like a nice day ahead!", "It's a bit chilly outside."]
+    },
+    {
+        "tag": "news",
+        "patterns": ["what's the news?", "any updates?", "current events", "news update"],
+        "responses": ["Check the latest news online.", "Stay informed with the latest updates.", "There’s always something happening!", "Catch up on today’s headlines.", "You can find news updates online."]
+    },
+    {
+        "tag": "sports",
+        "patterns": ["what's the score?", "any game updates?", "sports update", "who's winning?"],
+        "responses": ["Check the live scores online.", "It’s a tight game!", "Stay tuned for updates.", "You can find the latest scores online.", "Game updates are available online."]
+    },
+    {
+        "tag": "joke",
+        "patterns": ["tell me a joke", "make me laugh", "joke", "funny"],
+        "responses": ["Why don’t skeletons fight each other? They don’t have the guts.", "What do you call cheese that isn't yours? Nacho cheese.", "Why was the math book sad? It had too many problems.", "What do you call fake spaghetti? An impasta.", "Why don’t scientists trust atoms? Because they make up everything!"]
+    },
+    {
+        "tag": "movie_recommendation",
+        "patterns": ["suggest a movie", "movie recommendation", "what should I watch?", "good movies?"],
+        "responses": ["How about 'Inception'?", "You might enjoy 'The Matrix'.", "Try watching 'The Shawshank Redemption'.", "'Interstellar' is great!", "'The Dark Knight' is a classic!"]
+    },
+    {
+        "tag": "music_recommendation",
+        "patterns": ["suggest a song", "music recommendation", "what should I listen to?", "good music?"],
+        "responses": ["Try 'Bohemian Rhapsody' by Queen.", "How about 'Shape of You' by Ed Sheeran?", "'Imagine' by John Lennon is beautiful.", "'Blinding Lights' by The Weeknd is catchy.", "'Rolling in the Deep' by Adele is amazing."]
+    },
+    {
+        "tag": "food_recommendation",
+        "patterns": ["what should I eat?", "food suggestion", "recommend a meal", "what's for dinner?"],
+        "responses": ["Pizza sounds good!", "How about sushi?", "Try a burger!", "Salad is always a healthy choice.", "Maybe some pasta?"]
+    },
+    {
+        "tag": "hobby",
+        "patterns": ["what's your hobby?", "do you have hobbies?", "what do you enjoy?", "how do you spend your time?"],
+        "responses": ["I love chatting with people!", "I enjoy learning new things.", "Helping others is my hobby.", "I like solving problems.", "I enjoy coding."]
+    },
+    {
+        "tag": "motivation",
+        "patterns": ["give me motivation", "inspire me", "motivate me", "I need encouragement"],
+        "responses": ["You can do it!", "Believe in yourself!", "Keep pushing forward!", "Don’t give up!", "Stay positive and keep moving forward!"]
+    },
+    {
+        "tag": "fun_fact",
+        "patterns": ["tell me a fun fact", "fun fact", "interesting fact", "give me a fact"],
+        "responses": ["Did you know honey never spoils?", "A group of flamingos is called a 'flamboyance'.", "Bananas are berries, but strawberries aren’t.", "There are more stars in the universe than grains of sand on Earth.", "Octopuses have three hearts."]
+    },
+    {
+        "tag": "favorite_color",
+        "patterns": ["what's your favorite color?", "favorite color?", "do you have a favorite color?", "color you like?"],
+        "responses": ["I like blue.", "Green is nice.", "Red is vibrant.", "Yellow is cheerful!", "Purple is cool!"]
+    },
+    {
+        "tag": "favorite_animal",
+        "patterns": ["what's your favorite animal?", "favorite animal?", "do you have a favorite animal?", "animal you like?"],
+        "responses": ["I like dogs!", "Cats are cool.", "Birds are fascinating.", "I think dolphins are amazing!", "Tigers are majestic!"]
+    },
+    {
+        "tag": "favorite_food",
+        "patterns": ["what's your favorite food?", "favorite food?", "do you have a favorite food?", "food you like?"],
+        "responses": ["Pizza is my favorite!", "I love sushi.", "Burgers are delicious!", "I enjoy pasta.", "Salads are refreshing."]
+    },
+    {
+        "tag": "compliment",
+        "patterns": ["you're awesome", "you're great", "I like you", "you're the best"],
+        "responses": ["Thank you!", "You're awesome too!", "I appreciate it!", "Thanks for the compliment!", "You're amazing!"]
+    },
+    {
+        "tag": "complaint",
+        "patterns": ["I'm not happy", "this is bad", "I have a complaint", "this isn't good"],
+        "responses": ["I'm sorry to hear that.", "I apologize for the inconvenience.", "How can I make it better?", "Let me know how I can help.", "Your feedback is important."]
+    },
+    {
+        "tag": "directions",
+        "patterns": ["how do I get there?", "give me directions", "where is it?", "how do I find it?"],
+        "responses": ["You can use a map for directions.", "Follow the signs.", "It's located nearby.", "Use GPS for the best route.", "Ask someone for directions."]
+    },
+    {
+        "tag": "favorite_season",
+        "patterns": ["what's your favorite season?", "favorite season?", "do you like summer?", "do you like winter?"],
+        "responses": ["I like summer.", "Winter is cozy!", "Spring is beautiful.", "Autumn is lovely.", "All seasons have something special."]
+    },
+    {
+        "tag": "work",
+        "patterns": ["what do you do?", "what's your job?", "what's your work?", "do you have a job?"],
+        "responses": ["I’m a chatbot!", "I assist with information.", "My job is to chat with you.", "I help answer questions.", "I’m here to assist!"]
+    },
+    {
+        "tag": "favorite_sport",
+        "patterns": ["what's your favorite sport?", "favorite sport?", "do you play sports?", "sport you like?"],
+        "responses": ["I like soccer!", "Basketball is exciting.", "Tennis is fun.", "I enjoy watching football.", "All sports are great!"]
+    },
+    {
+        "tag": "education",
+        "patterns": ["what's your education?", "are you educated?", "do you have a degree?", "where did you study?"],
+        "responses": ["I’m self-taught!", "I learn from data.", "My knowledge comes from the internet.", "I study all the time!", "I’m always learning."]
+    },
+    {
+        "tag": "age",
+        "patterns": ["how old are you?", "what's your age?", "are you old?", "are you young?"],
+        "responses": ["I’m ageless!", "I don't have an age.", "I was created recently.", "Age is just a number.", "I’m as old as you want me to be."]
+    },
+    {
+        "tag": "favorite_place",
+        "patterns": ["what's your favorite place?", "favorite place?", "do you have a favorite place?", "place you like?"],
+        "responses": ["I like virtual spaces!", "Anywhere with good internet.", "The digital world is my home.", "I enjoy being online.", "Everywhere is great!"]
+    },
+    {
+        "tag": "languages",
+        "patterns": ["what languages do you speak?", "do you speak other languages?", "can you talk in Spanish?", "do you know French?"],
+        "responses": ["I can speak many languages!", "I’m multilingual.", "Yes, I can speak Spanish.", "I know some French.", "I’m learning new languages every day."]
+    },
+    {
+        "tag": "favorite_book",
+        "patterns": ["what's your favorite book?", "favorite book?", "do you read books?", "book you like?"],
+        "responses": ["I like '1984' by George Orwell.", "'To Kill a Mockingbird' is great.", "'Moby Dick' is a classic.", "'The Great Gatsby' is wonderful.", "Books are a window to the world."]
+    },
+    {
+        "tag": "technology",
+        "patterns": ["do you like technology?", "what do you think about tech?", "technology you use?", "what's your favorite tech?"],
+        "responses": ["I love technology!", "Tech is amazing.", "I’m built with tech!", "Technology drives the world.", "Innovation is key!"]
+    },
+    {
+        "tag": "favorite_movie",
+        "patterns": ["what's your favorite movie?", "favorite movie?", "do you like movies?", "movie you like?"],
+        "responses": ["I like 'Inception'.", "'The Matrix' is cool.", "'The Shawshank Redemption' is amazing.", "'Interstellar' is great!", "'The Dark Knight' is my favorite."]
+    },
+    {
+        "tag": "gaming",
+        "patterns": ["do you play games?", "what's your favorite game?", "do you like gaming?", "what games do you play?"],
+        "responses": ["I enjoy video games!", "'Minecraft' is fun.", "'Fortnite' is popular.", "'Call of Duty' is intense.", "I like all games!"]
+    },
+    {
+        "tag": "current_events",
+        "patterns": ["what's happening in the world?", "current events?", "what's going on?", "any news updates?"],
+        "responses": ["Stay informed with news sources.", "There’s always something happening.", "You can find updates online.", "Current events are constantly changing.", "Check the news for the latest."]
+    },
+    {
+        "tag": "celebrity",
+        "patterns": ["who's your favorite celebrity?", "favorite celebrity?", "do you like celebrities?", "who do you follow?"],
+        "responses": ["I like Elon Musk.", "Oprah is inspiring.", "Dwayne Johnson is cool.", "Beyoncé is amazing.", "Celebrities are fascinating."]
+    },
+    {
+        "tag": "travel",
+        "patterns": ["where should I travel?", "travel suggestion?", "where should I go?", "places to visit?"],
+        "responses": ["How about Paris?", "Try visiting Tokyo.", "New York is exciting!", "Consider a trip to Rome.", "Traveling is always fun!"]
+    },
+    {
+        "tag": "goal",
+        "patterns": ["what's your goal?", "do you have goals?", "what are you aiming for?", "what's your purpose?"],
+        "responses": ["My goal is to assist you.", "I aim to help people.", "My purpose is to provide information.", "I’m here to make your life easier.", "Helping others is my mission."]
+    },
+    {
+        "tag": "shopping",
+        "patterns": ["what should I buy?", "shopping recommendation?", "where should I shop?", "shopping suggestion?"],
+        "responses": ["How about some new clothes?", "Try buying a book.", "A new gadget might be nice.", "Shopping online is convenient.", "Consider supporting local stores."]
+    },
+    {
+        "tag": "holiday",
+        "patterns": ["what's your favorite holiday?", "favorite holiday?", "do you like holidays?", "what holiday do you celebrate?"],
+        "responses": ["I like Christmas.", "Halloween is fun!", "New Year’s is exciting.", "Thanksgiving is nice.", "Holidays are special."]
+    },
+    {
+        "tag": "favorite_drink",
+        "patterns": ["what's your favorite drink?", "favorite drink?", "what do you like to drink?", "drink you prefer?"],
+        "responses": ["I like coffee.", "Tea is relaxing.", "Water is essential.", "Juice is refreshing.", "Soda is a treat!"]
+    },
+    {
+        "tag": "favorite_tv_show",
+        "patterns": ["what's your favorite TV show?", "favorite show?", "do you watch TV?", "show you like?"],
+        "responses": ["I like 'Breaking Bad'.", "'Game of Thrones' is epic.", "'Friends' is a classic.", "'Stranger Things' is thrilling.", "TV shows are entertaining."]
+    },
+    {
+        "tag": "pets",
+        "patterns": ["do you have pets?", "what's your pet?", "do you like pets?", "favorite pet?"],
+        "responses": ["I don't have pets, but I like dogs!", "Cats are cute.", "Pets are wonderful.", "Animals are great companions.", "Pets bring joy."]
+    },
+    {
+        "tag": "exercise",
+        "patterns": ["do you exercise?", "favorite exercise?", "do you work out?", "what's your workout?"],
+        "responses": ["I love to stay active!", "Running is great.", "Yoga is relaxing.", "Exercise keeps you healthy.", "Working out is important."]
+    }
+   
+
+    {
+        "tag": "live_scores",
+        "patterns": ["what's the live score?", "current football score?", "who's winning right now?", "live match update?"],
+        "responses": ["You can check the live scores on major sports websites.", "The score is constantly updating, check live sports apps.", "Visit a sports news site for real-time scores.", "Tune into live score apps for the latest updates.", "I recommend checking live scoreboards online."]
+    },
+    {
+        "tag": "match_predictions",
+        "patterns": ["who will win today's match?", "match predictions?", "who's likely to win?", "football predictions for today?"],
+        "responses": ["Predictions are tricky! It's anyone's game.", "Team form and injuries could affect the outcome.", "Many analysts favor the home team.", "It's a close match, but one team has the edge.", "Check out prediction websites for detailed insights."]
+    },
+    {
+        "tag": "top_scorer_predictions",
+        "patterns": ["who will be the top scorer?", "top scorer predictions?", "who's leading the golden boot race?", "best goal scorer predictions?"],
+        "responses": ["It could be Erling Haaland this season.", "Lionel Messi always has a chance.", "Mohamed Salah is in great form.", "Keep an eye on Kylian Mbappé.", "Robert Lewandowski is always a contender."]
+    },
+    {
+        "tag": "injury_updates",
+        "patterns": ["any injury updates?", "who's injured?", "latest football injuries?", "player injury news?"],
+        "responses": ["Check the latest team news for updates on injuries.", "Some key players are currently sidelined.", "Injury reports often come out before the match.", "Stay updated with the club's official announcements.", "Injuries can change the dynamics of a game."]
+    },
+    {
+        "tag": "half_time_scores",
+        "patterns": ["what's the half-time score?", "half-time update?", "current score at half-time?", "who's leading at half-time?"],
+        "responses": ["The half-time score is often crucial.", "Check live updates for the half-time score.", "It's a close game at half-time.", "The leading team might have the edge now.", "Half-time scores can be misleading."]
+    },
+    {
+        "tag": "final_scores",
+        "patterns": ["what's the final score?", "match result?", "who won the match?", "final match update?"],
+        "responses": ["The final score was 2-1.", "It's a draw at the end of the match.", "One team came out on top!", "The match ended with a decisive win.", "Check the sports news for the final result."]
+    },
+    {
+        "tag": "upcoming_fixtures",
+        "patterns": ["what's the next match?", "upcoming football fixtures?", "when's the next game?", "who's playing next?"],
+        "responses": ["The next big match is tomorrow.", "There are several games lined up this weekend.", "The fixture list is packed with exciting matches.", "Check the schedule for the next round of games.", "Some key matches are coming up soon."]
+    },
+    {
+        "tag": "match_highlights",
+        "patterns": ["where can I watch match highlights?", "latest football highlights?", "match recap?", "highlights of the game?"],
+        "responses": ["You can find highlights on sports websites.", "Check YouTube for the latest match highlights.", "The club’s official page often has highlights.", "Sports channels usually broadcast highlights.", "Social media is also a good place to find them."]
+    },
+    {
+        "tag": "betting_tips",
+        "patterns": ["any betting tips?", "football betting advice?", "who should I bet on?", "betting predictions?"],
+        "responses": ["Betting is unpredictable, but form matters.", "Consider the team’s recent performance.", "Look at head-to-head stats before betting.", "Always bet responsibly.", "Underdogs can sometimes pull off surprises."]
+    },
+    {
+        "tag": "match_analysis",
+        "patterns": ["what's your match analysis?", "how was the match?", "post-match analysis?", "what happened in the game?"],
+        "responses": ["The match was closely contested.", "One team dominated possession.", "A tactical switch changed the game.", "Defensive errors cost the losing team.", "The game was decided by a late goal."]
+    },
+    {
+        "tag": "player_performance",
+        "patterns": ["how did the players perform?", "player ratings?", "who was the man of the match?", "player performance analysis?"],
+        "responses": ["Player X was outstanding today.", "The goalkeeper made some crucial saves.", "Midfielders controlled the game.", "The defense was solid throughout.", "The striker was clinical in front of goal."]
+    },
+    {
+        "tag": "top_assists",
+        "patterns": ["who's leading in assists?", "top assist providers?", "who's the best playmaker?", "assist leaders this season?"],
+        "responses": ["Player X has the most assists so far.", "Look out for key playmakers.", "Team Y’s midfield is providing lots of assists.", "The top assist providers are in fine form.", "Assists are just as important as goals."]
+    },
+    {
+        "tag": "league_table",
+        "patterns": ["what's the current league table?", "league standings?", "who's top of the league?", "league table update?"],
+        "responses": ["Team X is currently leading the league.", "The title race is very close.", "Check the latest standings online.", "Relegation battles are heating up.", "The top four spots are highly contested."]
+    },
+    {
+        "tag": "cup_tournaments",
+        "patterns": ["who's in the cup final?", "cup tournament updates?", "who won the cup?", "cup competition results?"],
+        "responses": ["Team X has reached the cup final.", "The cup competition has been thrilling.", "Check the latest cup results.", "Cup finals are always exciting.", "Team Y won the cup in dramatic fashion."]
+    },
+    {
+        "tag": "clean_sheets",
+        "patterns": ["who has the most clean sheets?", "best defense in the league?", "top goalkeepers?", "clean sheet leaders?"],
+        "responses": ["Goalkeeper X has the most clean sheets.", "Team Y has the best defensive record.", "Clean sheets are crucial for winning titles.", "A solid defense is the foundation of success.", "Check the stats for the latest clean sheets."]
+    },
+    {
+        "tag": "transfer_news",
+        "patterns": ["any transfer updates?", "latest transfer news?", "who's moving to a new club?", "transfer rumors?"],
+        "responses": ["Player X is rumored to be transferring.", "Some big names are being linked with moves.", "The transfer window is always full of surprises.", "Check the latest transfer news online.", "Clubs are busy in the transfer market."]
+    },
+    {
+        "tag": "injury_recovery",
+        "patterns": ["how long is Player X out for?", "injury recovery updates?", "when will Player X return?", "recovery time for injured players?"],
+        "responses": ["Player X is expected to be out for several weeks.", "Recovery times can vary depending on the injury.", "Injury updates are often released by the club.", "Some players recover faster than expected.", "Check the latest reports for more details."]
+    },
+    {
+        "tag": "goal_of_the_month",
+        "patterns": ["who won goal of the month?", "best goal this month?", "who scored the best goal?", "goal of the month nominees?"],
+        "responses": ["Goal X won the goal of the month award.", "There were some spectacular goals this month.", "Check out the nominees for goal of the month.", "Fans voted for Goal Y as the best.", "It’s always exciting to see the top goals."]
+    },
+    {
+        "tag": "VAR_decisions",
+        "patterns": ["any controversial VAR decisions?", "latest VAR news?", "was the goal disallowed?", "how did VAR impact the game?"],
+        "responses": ["VAR has caused some controversy.", "A goal was disallowed after a VAR review.", "VAR decisions are always debated.", "Check the latest on VAR incidents.", "VAR plays a big role in modern football."]
+    },
+    {
+        "tag": "yellow_cards",
+        "patterns": ["who got booked?", "yellow cards in the match?", "any players suspended?", "who's on a yellow card?"],
+        "responses": ["Several players were booked today.", "Yellow cards can lead to suspensions.", "Discipline is key to avoiding yellow cards.", "Check the match report for yellow cards.", "Some players are walking a disciplinary tightrope."]
+    },
+    {
+        "tag": "red_cards",
+        "patterns": ["who got sent off?", "any red cards?", "was there a red card?", "who received a red card?"],
+        "responses": ["Player X was sent off in the match.", "Red cards can change the game.", "A team played with 10 men after a red card.", "Check the match highlights for red cards.", "Red cards can be controversial."]
+    },
+    
+
+]
